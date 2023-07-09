@@ -15,26 +15,52 @@ nav {
  justify-content: space-evenly;
 }
 
+.name_block>img{
+    transition: 1s;
+}
+.name_block>img:hover{
+    transform: scale(1.2)
+}
+
 header {
     margin: 30px;
 }
 
-nav>a{
-    background-color: rgb(145, 204, 243);
+ul {
+    list-style-type: disclosure-closed;
 }
 
+nav>a, .projects_link, .footer_link{
+    background-color: rgb(14, 123, 196);
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: beige;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 0px rgba(89, 89, 89, 0.75);
+}
+
+nav>a:hover, .projects_link:hover, .footer_link:hover{
+    color: aqua;
+}
+
+h2 {
+    padding-top: 40px;
+}
 
 main {
     margin: 30px;
     padding: 15px;
     background-color: rgb(145, 204, 243);
     border-radius: 10px;
-    box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);}
+    box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+}
 
 
 code {
     background-color: rgb(212, 211, 211);
     display: block;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
@@ -43,6 +69,3 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-
-
